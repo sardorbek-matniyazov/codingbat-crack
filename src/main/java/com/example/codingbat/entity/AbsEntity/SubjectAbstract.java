@@ -21,7 +21,7 @@ public abstract class SubjectAbstract {
     private String name;
 
     @NotNull(message = "description is required")
-    @Column(nullable = false)
+    @Column(nullable = false, length = 100000)
     private String description;
 
     public SubjectAbstract(String name, String description) {
